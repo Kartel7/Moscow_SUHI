@@ -10,7 +10,7 @@ This data includes:
    - lcz_time_series_analysis: average LST (land surface temperature) dynamics analysis by dedicated local climate zones
    - suhi_area_dynamics: SUHI area dynamics analysis by cluster (intensity type)
 <br>
-This research was completed as part of a 3rd year coursework project
+This research was completed as part of a 3rd year coursework project in HSE, 2024-2025
 <br>
 
 CRU TS Reanalysis-based data validation can be found here: https://colab.research.google.com/drive/1JdmzLNQHXYrNTjCJbWlxCyjJuj7aqXn9?usp=sharing
