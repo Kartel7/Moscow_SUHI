@@ -16,27 +16,27 @@ Note that since I'm not really good at using JS, neural networks (ChatGPT, Grok)
 Algorithm for Landsat-5 & 8 Processing, atmospheric correction, summer SUHI calculation and clustering, some statistical calculations (mean LST, SUHI area) and export
 
 Main used parameters:
- * GEOMETRY:
- *
- * var roi: ROI (Big Moscow)
- * var rgnp: bounds for image search (Moscow center boundaries here)
- * var rgnperc: bounds for ndvi 10 and 90 percentiles calculation (Moscow boundaries here)
- * var agglomeration: parts of agglomeration inside ROI for analysis and statistics calculation (Big Moscow parts here)
- *     includes fields:
- *                      'agl': name of every agglomeration part
- * var lcz: polygons of local climate zones for statistics and clustering
- *     includes fields:
- *                      'id': unique id for each polygon
- *                      'lcz': lcz class
- *                      'name': unique name for each polygon
- *                      'rus': unique name for each polygon in the second language
- * 
- * var rural: polygons of rural areas inside ROI for SUHI calculation
- * 
- * OTHER:
- * 
- * vars L5_START_YEAR, L5_END_YEAR = ... : Last years to search for images of Landsat 5
- * vars L8_START_YEAR, L8_END_YEAR = ... : Last years to search for images of Landsat 8
- * vars example_yearL5, example_yearL8, merged_example_year = ... : Years for visualization
- * var periods: list of dictionaries with your time periods in format like [{start:y1, end:y2}, {start:y2+1, end:y3}, etc.]
+<br>
+* GEOMETRY:
+<br>
+1. var roi: ROI (Big Moscow) <br>
+2. var rgnp: bounds for image search (Moscow center boundaries here) <br>
+3. var rgnperc: bounds for ndvi 10 and 90 percentiles calculation (Moscow boundaries here) <br>
+4. var agglomeration: parts of agglomeration inside ROI for analysis and statistics calculation (Big Moscow parts here) <br>
+includes fields: <br>
+                      'agl': name of every agglomeration part <br>
+5. var lcz: polygons of local climate zones for statistics and clustering <br>
+      includes fields: <br>
+                       'id': unique id for each polygon<br>
+                       'lcz': lcz class<br>
+                       'name': unique name for each polygon<br>
+                       'rus': unique name for each polygon in the second language<br>
+6. var rural: polygons of rural areas inside ROI for SUHI calculation<br>
+<br>
+OTHER:
+<br>
+7. vars L5_START_YEAR, L5_END_YEAR = ... : Last years to search for images of Landsat 5<br>
+8. vars L8_START_YEAR, L8_END_YEAR = ... : Last years to search for images of Landsat 8<br>
+9. vars example_yearL5, example_yearL8, merged_example_year = ... : Years for visualization<br>
+10. var periods: list of dictionaries with your time periods in format like [{start:y1, end:y2}, {start:y2+1, end:y3}, etc.]
 
