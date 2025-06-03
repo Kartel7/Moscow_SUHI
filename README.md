@@ -12,29 +12,27 @@ It's free to use for your own researches on SUHI anywhere on Earth.
 <br>
 Note that since I'm not really good at using JS, neural networks (ChatGPT, Grok) were actually used to get some parts of the JS code in Google Earth Engine.
 <br>
-# Look up to main input variables required to use GEE code in your ROI:
+
+## Look up to main input variables required to use GEE code in your ROI:
 Algorithm for Landsat-5 & 8 Processing, atmospheric correction, summer SUHI calculation and clustering, some statistical calculations (mean LST, SUHI area) and export
 
-Main used parameters:
-<br>
-* GEOMETRY:
+### Main used parameters:
+***GEOMETRY***:
 <br>
 1. var roi: ROI (Big Moscow) <br>
 2. var rgnp: bounds for image search (Moscow center boundaries here) <br>
 3. var rgnperc: bounds for ndvi 10 and 90 percentiles calculation (Moscow boundaries here) <br>
 4. var agglomeration: parts of agglomeration inside ROI for analysis and statistics calculation (Big Moscow parts here) <br>
-includes fields: <br>
-                      'agl': name of every agglomeration part <br>
+*includes fields:* <br>
+-                      'agl': name of every agglomeration part
 5. var lcz: polygons of local climate zones for statistics and clustering <br>
-      includes fields: <br>
-                       'id': unique id for each polygon<br>
-                       'lcz': lcz class<br>
-                       'name': unique name for each polygon<br>
-                       'rus': unique name for each polygon in the second language<br>
-6. var rural: polygons of rural areas inside ROI for SUHI calculation<br>
-<br>
-OTHER:
-<br>
+*includes fields:* <br>
+-                       'id': unique id for each polygon
+-                       'lcz': lcz class
+-                       'name': unique name for each polygon
+-                       'rus': unique name for each polygon in the second language
+6. var rural: polygons of rural areas inside ROI for SUHI calculation
+<br><br>***OTHER:***
 7. vars L5_START_YEAR, L5_END_YEAR = ... : Last years to search for images of Landsat 5<br>
 8. vars L8_START_YEAR, L8_END_YEAR = ... : Last years to search for images of Landsat 8<br>
 9. vars example_yearL5, example_yearL8, merged_example_year = ... : Years for visualization<br>
